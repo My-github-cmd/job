@@ -2,6 +2,7 @@
 * 不是响应式的，vue只能拦截预先定义的对象属性，对于新增的name属性是不能拦截到的；也就是说当vue实例创建好之后，data中的成员是在创建vue对象的时候，通过new Observer来将其设置为响应式数据，当vue实例化完成后，再添加一个成员，此时仅仅是在vm上增加了一个js属性，并不是响应式的
 * 设置为响应式有两种方法
   * 一：给dog的name属性设置要给初始值，可以是空的字符串或者是undefined等
+    
     * 原因：创建vue实例的时，调用_proxyData方法，通过Object.defineProperty()将data中的数据设置为getter和setter，dog是一个对象，对象中添加了name成员，当数据发生变化的时候会触发Observe，通过walk方法，判断传入的数据是否是一个对象，如果是一个对象，调用defineReactive方法遍历该对象并给该对象的成员添加getter和setter，所以新添加的成员也是响应式的
   * 二：通过Vue.set(object, propertyName, value) object:需要添加属性的对象 propertyName:需要添加的属性名 value:添加的属性值
     ```js
@@ -267,7 +268,10 @@ htmlUpdata(node, value, key) { // v-html
       })
   }
 ```
-### 
+### 参考 Snabbdom 提供的电影列表的示例，利用Snabbdom 实现类似的效果
+
+![image-20210113115655372](D:\桌面文件\技术笔记\作业\job\新建文件夹\image-20210113115655372.png)
+
 ```js
 // app.js
 import { init, h } from 'snabbdom'
