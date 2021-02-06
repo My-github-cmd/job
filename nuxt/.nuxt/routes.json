@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/",
+    "component": "C:\\\\Users\\\\戴尔\\\\Desktop\\\\新建文件夹\\\\job\\\\nuxt\\\\pages\\\\layout",
+    "children": [
+      {
+        "name": "home",
+        "path": "/",
+        "component": "C:\\\\Users\\\\戴尔\\\\Desktop\\\\新建文件夹\\\\job\\\\nuxt\\\\pages\\\\home",
+        "_name": "_75e3a8c2"
+      },
+      {
+        "name": "login",
+        "path": "/login",
+        "component": "C:\\\\Users\\\\戴尔\\\\Desktop\\\\新建文件夹\\\\job\\\\nuxt\\\\pages\\\\login",
+        "_name": "_46c9b7e6"
+      },
+      {
+        "name": "register",
+        "path": "/register",
+        "component": "C:\\\\Users\\\\戴尔\\\\Desktop\\\\新建文件夹\\\\job\\\\nuxt\\\\pages\\\\login",
+        "_name": "_46c9b7e6"
+      },
+      {
+        "name": "profile",
+        "path": "/profile/:username",
+        "component": "C:\\\\Users\\\\戴尔\\\\Desktop\\\\新建文件夹\\\\job\\\\nuxt\\\\pages\\\\profile",
+        "_name": "_d73bb234"
+      },
+      {
+        "name": "settings",
+        "path": "/settings",
+        "component": "C:\\\\Users\\\\戴尔\\\\Desktop\\\\新建文件夹\\\\job\\\\nuxt\\\\pages\\\\settings",
+        "_name": "_edba72f4"
+      },
+      {
+        "name": "editor",
+        "path": "/editor/:slug?",
+        "component": "C:\\\\Users\\\\戴尔\\\\Desktop\\\\新建文件夹\\\\job\\\\nuxt\\\\pages\\\\editor",
+        "_name": "_f43d2ee0"
+      },
+      {
+        "name": "article",
+        "path": "/article/:slug?",
+        "component": "C:\\\\Users\\\\戴尔\\\\Desktop\\\\新建文件夹\\\\job\\\\nuxt\\\\pages\\\\article",
+        "_name": "_7b2c6a33"
+      }
+    ],
+    "_name": "_dc9f7b66"
+  }
+]
