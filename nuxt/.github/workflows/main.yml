@@ -54,8 +54,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: | # 执行命令（运行到服务器）cd：要确保服务器有这个目录； wget：下载上一步的release到服务器； tar：解压； 安装依赖；启动服务
-          cd /root/realworld-nuxtjs
-          wget https://github.com/cloveryuan/realworld-nuxtjs/releases/latest/download/release.tgz -O release.tgz
+          cd /root/realworld
+          wget https://github.com/My-github-cmd/job/tree/master/nuxt/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
           npm install --production
           pm2 reload pm2.config.json
